@@ -44,70 +44,6 @@ book-part-id:before {
   content: "Book ID (" attr(book-part-id-type) ") ";
   font-weight: bold }
 
-contrib-group:before {
-  content: "Contributors:";
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
-article-meta > pub-date:before {
-  content: "Publication date (" attr(pub-type) "): ";
-  font-weight: bold }
-
-volume:before {
-  content: "Volume: ";
-  font-weight: bold }
-
-issue:before {
-  content: "Issue: ";
-  font-weight: bold }
-
-fpage:before {
-  content: "first page: ";
-  font-weight: bold }
-
-lpage:before {
-  content: "last page: ";
-  font-weight: bold }
-
-article-meta > ext-link:before {
-  content: attr(ext-link-type) ": ";
-  color: black;
-  text-decoration: none;
-  font-weight: bold }
-
-history:before {
-  content: "History: ";
-  font-weight: bold }
-
-history > date:before, pub-history > date:before {
-  content: attr(date-type) " " }
-
-event:before {
-  content: attr(event-type) " "
-}
-
-event > edition:before {
-  content: attr(event-type) " "
-}
-
-pub-history:before {
-  content: "Publication history: ";
-  font-weight: bold }
-
-history date:before {
-  content: attr(date-type) " " }
-
-product:before {
-  content: "Product: ";
-  font-style: italic;
-  margin-bottom: 0.5em;
-}
-
-permissions:before {
-  content: "Permissions: ";
-  font-weight: bold
-}
 
 copyright-holder:before {
   content: "Copyright holder: " }
@@ -314,9 +250,6 @@ index-term[id]:before {
   content: "[index (" attr(id) "): ";
   font-style: normal
 }
-
-index-term-range-end[rid]:after {
-  content: "<index (" attr(rid) ")]" }
 
 index-term-range-end:after {
   content: "<index]" }
@@ -617,7 +550,4 @@ nlm-citation year:before, element-citation year:before {
   font-style: normal; font-family: sans-serif; font-size:85%; 
   content: " year: ";
 }
-
-nav-pointer:after {
-  content: " (" attr(rid) ")" }
 

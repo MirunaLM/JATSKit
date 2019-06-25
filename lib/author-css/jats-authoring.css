@@ -7,17 +7,7 @@ article, book, book-part-wrapper, collection, collection-list {
   margin:0.5em
 }
 
-front, front-matter {
-  display: block;
-  font-family: sans-serif;
-  font-size:90%;
-  border: thin black solid;
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 0.5em;
-}
+
 
 body, back, book-body, book-back, book-part, named-book-part-body,
 dedication, foreword, preface, front-matter-part, index { display: block }
@@ -70,101 +60,10 @@ alt-title {
   font-size: 110%;
 }
 
-contrib-group, permissions {
-  display: block;
-  font-size: 90%;
-  background-color: #DDD;
-  border: thin black solid;
-  padding-top: 0.5em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  padding-bottom: 0.5em;
-  margin-top: 1em;
-}
 
-contrib {
-  display: block;
-  background-color: white;
-  border: thin black solid;
-  padding-top: 0.5em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
-}
 
-name:after {
-  content: " ";
-}
 
-surname {
-  display: inline;
-}
 
-given-names {
-  display: inline;
-}
-
-given-names:before {
-  content: ", ";
-}
-
-prefix,
-suffix {
-  display: inline;
-}
-
-prefix:before {
-  content: " (";
-}
-
-prefix:after {
-  content: ")";
-}
-
-suffix:before {
-  content: ", ";
-}
-
-aff {
-  display: block;
-}
-
-author-comment {
-  display: inline;
-}
-
-institution {
-  display: inline;
-}
-
-collab {
-  display:block
-}
-
-address {
-  display:block;
-}
-
-addr-line,
-country {
-  display:block;
-}
-
-publisher-loc * { display: block }
-
-email {
-  font-size: 90%;
-  color: blue;
-}
-
-email:before {
-  content: "[";
-}
-
-email:after {
-  content: "]";
-}
 
 article-categories subject, article-meta > pub-date,
 volume, issue, fpage, lpage, article-meta > ext-link, collection-member > ext-link, history, pub-history {
@@ -594,145 +493,6 @@ gloss-group title {
 
 /* inline elements */
 
-alt-text {
-  display: inline;
-  background:#ACF;
-  color:#F44;
-}
-
-citation {
-  display: inline;
-}
-
-citation:before {
-  content: "[";
-}
-
-citation:after {
-  content: "]";
-}
-
-
-abbrev {
-  display: inline;
-  background-color:#BFD;
-}
-
-bold {
-  display: inline;
-  font-weight:bold;
-}
-
-italic {
-  display: inline;
-  font-style:italic;
-}
-
-code {
-  display: inline;
-  font-size:85%;
-  font-family:monospace;
-  background-color: gainsboro;
-}
-
-monospace {
-  display: inline;
-  font-size:85%;
-  font-family:monospace;
-}
-
-index-term {
- display: inline;
- font-weight: bold
-}
-
-index-term:before {
-  content: '[' }
-
-index-term:after {
-  content: ']'
-}
-
-see:before, see-also:before {
-  content: '(' }
-
-see:after, see-also:after {
-  content: ')'
-}
-
-index-term-range-end { content: '' }
-
-inline-formula {
-  display: inline;
-  font-style:italic;
-}
-
-named-content {
-  display: inline;
-  background-color:#FCA;
-}
-
-overline {
-  display: inline;
-  border-top: thin solid black;
-  text-decoration:overline;
-}
-
-sc {
-  font-variant: small-caps;
-}
-
-strike {
-  display: inline;
-  text-decoration: line-through;
-}
-
-sub {
-  display:inline;
-  font-size:80%;
-  vertical-align:sub
-}
-
-sup {
-  display:inline;
-  font-size:80%;
-  vertical-align:super;
-}
-
-target {
-  display: inline;
-  color:#F44;
-  background-color:#EFF;
-}
-
-ext-link {
-  display: inline;
-  color:blue;
-  text-decoration:underline;
-}
-
-ext-link:after {
-  font-size: 80%; font-family: sans-serif;
-  content: attr(xlink\:href) }
-
-underline {
-  display: inline;
-  text-decoration:underline;
-}
-
-uri {
-  display: inline;
-  color:blue;
-  text-decoration:underline;
-}
-
-xref {
-  display: inline;
-  color: green;
-  background-color: #FFC;
-  font-weight: bold
-}
-
 
 /* graphics and media */
 
@@ -832,16 +592,13 @@ see-entry:before { content: "See: " }
 
 see-also-entry:before { content: "See also: " }
 
-xref:before {
-   link:"#" attr(rid);
-   content: url('../../img/link.png');
-}
+
 
 book-part-meta { text-align: center }
 
-sec { border: thin dotted black; padding: 0.5em; margin: 0.5em }
 
-label { border: thin solid darkred; padding: 0.25em }
+
+
 
 toc-entry { border: thin dashed black; padding: 0.25em; margin-top: 0.5em }
 

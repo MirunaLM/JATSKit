@@ -10,17 +10,10 @@
   -oxy-tags-color:white;
   -oxy-tags-background-color:blue; }*/
 
-* {  -oxy-tags-color:            midnightblue;
-     -oxy-tags-background-color: skyblue;} 
-
-article, article * {  -oxy-tags-color:            saddlebrown;
-                      -oxy-tags-background-color: lemonchiffon;} 
 
 /* Blue is detected by the presence of a front/journal-meta */
-article:has( front > journal-meta ), 
-article:has( front > journal-meta ) * 
-{ -oxy-tags-color:            midnightblue;
-  -oxy-tags-background-color: lightsteelblue; }
+
+
   
 article, book { counter-reset: footnote }
 
@@ -46,12 +39,10 @@ book-part {
 addr-line { display: block }
 attrib    { display: block }
 
-sec { border-top: thin dotted black;
-    -oxy-foldable:true;
-    -oxy-not-foldable-child: title }
 
 
-xref:after {
+
+/*xref:after {
   content:  oxy_combobox(           
             edit, "@rid",
             editable, true,
@@ -63,7 +54,7 @@ ext-link:after { font-family: sans-serif; font-size: 80%;
       oxy_urlChooser(        
         edit, "@xlink:href",
         columns 40);
-}
+}*/
 
 list:before { font-family: sans-serif; font-size: 80%;
    content: "List type: " 
